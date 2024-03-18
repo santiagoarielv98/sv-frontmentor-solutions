@@ -1,11 +1,11 @@
 @tailwind base;
-/* @tailwind components; */
+@tailwind components;
 @tailwind utilities;
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  @apply font-light text-[11px] text-center fixed bottom-0 right-0 px-2 py-1 bg-white text-black;
 }
 .attribution a {
+  @apply hover:underline;
   color: hsl(228, 45%, 44%);
 }
