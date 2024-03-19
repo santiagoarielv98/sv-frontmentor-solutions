@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400..800&family=Young+Serif&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .attribution {
-  @apply font-light text-[11px] text-center fixed bottom-0 right-0 px-2 py-1 bg-white text-black;
+  @apply fixed bottom-0 right-0 bg-white px-2 py-1 text-center text-[11px] font-light text-black shadow-md;
 }
 .attribution a {
   @apply hover:underline;
