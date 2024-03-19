@@ -8,7 +8,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
 }
 
 @font-face {
@@ -16,5 +17,6 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
 }
