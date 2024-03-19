@@ -8,17 +8,19 @@
     <title>SV - Recipe page</title>
   </head>
   <body class="flex items-center justify-center text-base font-outfit bg-neutral-eggshell text-neutral-wengeBrown">
-    <main class="my-[7.5rem]">
+    <main class="md:my-[7.5rem]">
       <!-- card -->
-      <article class="max-w-[46rem] rounded-3xl bg-white overflow-hidden p-10 space-y-7 shadow-sm">
+      <article
+        class="md:max-w-[46rem] md:rounded-3xl bg-white overflow-hidden max-md:pb-12 md:py-10 space-y-6 md:space-y-7 shadow-sm"
+      >
         <!-- header -->
-        <header class="space-y-11">
-          <figure>
-            <img src="./assets/images/image-omelette.jpeg" alt="omelette" class="rounded-xl" />
+        <header class="md:space-y-11 space-y-10">
+          <figure class="md:px-10">
+            <img src="./assets/images/image-omelette.jpeg" alt="omelette" class="md:rounded-xl" />
             <figcaption class="hidden">Simple Omelette Recipe</figcaption>
           </figure>
-          <div class="space-y-6">
-            <h1 class="text-5xl text-[2.5rem] font-young text-neutral-darkCharcoal">Simple Omelette Recipe</h1>
+          <div class="space-y-5 md:space-y-6 px-8 md:px-10">
+            <h1 class="text-4xl md:text-[2.5rem] font-young text-neutral-darkCharcoal">Simple Omelette Recipe</h1>
             <p>
               An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
               perfection, optionally filled with your choice of cheese, vegetables, or meats.
@@ -27,7 +29,7 @@
         </header>
         <!-- header -->
         <!-- sub-article - preparation time -->
-        <section class="space-y-6">
+        <section class="space-y-6 px-8 md:px-10">
           <article class="p-7 bg-neutral-roseWhite rounded-md">
             <section class="space-y-2.5">
               <h3 class="text-xl text-primary-darkRaspberry font-bold">Preparation time</h3>
@@ -41,7 +43,7 @@
         </section>
         <!-- sub-article - preparation time -->
         <!-- article - ingredients -->
-        <section class="space-y-6">
+        <section class="space-y-6 px-8 md:px-10">
           <h2 class="text-primary-nutmeg text-3xl text-[1.75rem] font-young">Ingredients</h2>
           <ul class="list-disc marker:text-primary-nutmeg space-y-2 list-outside *:ml-6 *:pl-4">
             <li><b>2-3 large eggs</b></li>
@@ -54,11 +56,11 @@
         <!-- article - ingredients -->
 
         <!-- horizontal rule -->
-        <hr class="border-neutral-lightGrey" />
+        <hr class="border-neutral-lightGrey m-10" />
         <!-- horizontal rule -->
 
         <!-- article - instructions -->
-        <section class="space-y-6">
+        <section class="space-y-6 px-8 md:px-10">
           <h2 class="text-primary-nutmeg text-3xl text-[1.75rem] font-young">Instructions</h2>
           <ol class="list-decimal marker:text-primary-nutmeg marker:font-bold space-y-2 list-outside *:ml-6 *:pl-4">
             <li>
@@ -84,11 +86,11 @@
         <!-- article - instructions -->
 
         <!-- horizontal rule -->
-        <hr class="border-neutral-lightGrey" />
+        <hr class="border-neutral-lightGrey m-10" />
         <!-- horizontal rule -->
 
         <!-- article - nutrition -->
-        <section class="space-y-6">
+        <section class="space-y-6 px-8 md:px-10 max-md:pb-1">
           <h2 class="text-primary-nutmeg text-3xl text-[1.75rem] font-young">Nutrition</h2>
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
           <!-- table - nutritional -->
@@ -120,11 +122,9 @@
       </article>
       <!-- card -->
     </main>
-
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Santiago Ariel</a>.
     </div>
-    <!-- <img src="./design/desktop-design.jpg" alt="desktop" class="fixed inset-0 z-10 opacity-30 invert" /> -->
   </body>
 </html>
