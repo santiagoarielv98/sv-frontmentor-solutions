@@ -16,6 +16,10 @@ export default {
           darkCharcoal: "hsl(24, 5%, 18%)",
         },
       },
+      fontFamily: {
+        young: ["Young Serif", "serif"],
+        outfit: ["Outfit", "sans-serif"],
+      },
     },
   },
   plugins: [],
