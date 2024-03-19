@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>SV - Recipe page</title>
   </head>
-  <body class="flex items-center justify-center text-base font-outfit bg-neutral-eggshell">
+  <body class="flex items-center justify-center text-base font-outfit bg-neutral-eggshell text-neutral-wengeBrown">
     <main class="my-[7.5rem]">
       <article class="max-w-[46rem] rounded-3xl bg-white overflow-hidden p-10 space-y-7 shadow-sm">
         <header>
@@ -15,17 +15,19 @@
             <img src="./assets/images/image-omelette.jpeg" alt="omelette" class="rounded-xl" />
             <figcaption class="hidden">Simple Omelette Recipe</figcaption>
           </figure>
-          <h1 class="text-5xl text-[2.5rem] font-young mt-11">Simple Omelette Recipe</h1>
+          <h1 class="text-5xl text-[2.5rem] font-young mt-11 text-neutral-darkCharcoal">Simple Omelette Recipe</h1>
           <p class="mt-6">
             An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
             perfection, optionally filled with your choice of cheese, vegetables, or meats.
           </p>
         </header>
         <section class="space-y-6">
-          <article class="p-7">
+          <article class="p-7 bg-neutral-roseWhite rounded-md">
             <section class="space-y-2.5">
-              <h3 class="text-xl">Preparation time</h3>
-              <ul class="list-disc space-y-2 list-outside [&_li]:ml-6 [&_li]:pl-4">
+              <h3 class="text-xl text-primary-darkRaspberry font-bold">Preparation time</h3>
+              <ul
+                class="list-disc space-y-2 list-outside [&_li]:ml-6 [&_li]:pl-4 [&_li]:marker:text-primary-darkRaspberry"
+              >
                 <li><b>Total:</b> Approximately 10 minutes</li>
                 <li><b>Preparation:</b> 5 minutes</li>
                 <li><b>Cooking:</b> 5 minutes</li>
@@ -34,8 +36,8 @@
           </article>
         </section>
         <section class="space-y-6">
-          <h2 class="text-3xl text-[1.75rem] font-young">Ingredients</h2>
-          <ul class="list-disc space-y-2 list-outside [&_li]:ml-6 [&_li]:pl-4">
+          <h2 class="text-primary-nutmeg text-3xl text-[1.75rem] font-young">Ingredients</h2>
+          <ul class="list-disc space-y-2 list-outside [&_li]:ml-6 [&_li]:pl-4 [&_li]:marker:text-primary-nutmeg">
             <li><b>2-3 large eggs</b></li>
             <li><b>Salt, to taste</b></li>
             <li><b>Pepper, to taste</b></li>
@@ -43,10 +45,12 @@
             <li><b>Optional fillings: cheese, diced vegetables, cooked meats, herbs</b></li>
           </ul>
         </section>
-        <hr />
+        <hr class="border-neutral-lightGrey" />
         <section class="space-y-6">
-          <h2 class="text-3xl text-[1.75rem] font-young">Instructions</h2>
-          <ol class="list-decimal space-y-2 list-outside [&_li]:ml-6 [&_li]:pl-4">
+          <h2 class="text-primary-nutmeg text-3xl text-[1.75rem] font-young">Instructions</h2>
+          <ol
+            class="list-decimal space-y-2 list-outside [&_li]:ml-6 [&_li]:pl-4 [&_li]:marker:text-primary-nutmeg [&_li]:marker:font-bold"
+          >
             <li>
               <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
               You can add a tablespoon of water or milk for a fluffier texture.
@@ -67,27 +71,27 @@
             <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
           </ol>
         </section>
-        <hr />
+        <hr class="border-neutral-lightGrey" />
         <section class="space-y-6">
-          <h2 class="text-3xl text-[1.75rem] font-young">Nutrition</h2>
+          <h2 class="text-primary-nutmeg text-3xl text-[1.75rem] font-young">Nutrition</h2>
           <p>The table below shows nutritional values per serving without the additional fillings.</p>
-          <table class="table-auto w-full border-collapse font-bold">
+          <table class="table-auto w-full border-collapse [&_b]:text-primary-nutmeg">
             <tbody>
               <tr>
                 <td class="pb-5 pl-8">Calories</td>
-                <td class="pb-5 pr-8">277kcal</td>
+                <td class="pb-5 pr-8"><b>277kcal</b></td>
               </tr>
               <tr class="border-t">
                 <td class="pb-5 pl-8">Carbs</td>
-                <td class="pb-5 pr-8">0g</td>
+                <td class="pb-5 pr-8"><b>0g</b></td>
               </tr>
               <tr class="border-t">
                 <td class="pb-5 pl-8">Protein</td>
-                <td class="pb-5 pr-8">20g</td>
+                <td class="pb-5 pr-8"><b>20g</b></td>
               </tr>
               <tr class="border-t">
                 <td class="pl-8">Fat</td>
-                <td class="pr-8">22g</td>
+                <td class="pr-8"><b>22g</b></td>
               </tr>
             </tbody>
           </table>
@@ -99,6 +103,6 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Santiago Ariel</a>.
     </div>
-    <!-- <img src="./design/desktop-design.jpg" alt="desktop" class="fixed inset-0 -z-10" /> -->
+    <!-- <img src="./design/desktop-design.jpg" alt="desktop" class="fixed inset-0 z-10 opacity-30 invert" /> -->
   </body>
 </html>
