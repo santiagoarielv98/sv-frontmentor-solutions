@@ -7,7 +7,7 @@ const App = () => {
       <main className="md:my-[7.5rem]">
         <CardRecipe recipe={data} />
         <div className="attribution">
-          Challenge by
+          Challenge by{" "}
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor
           </a>
