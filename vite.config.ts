@@ -2,8 +2,11 @@ import react from "@vitejs/plugin-react-swc";
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
+const isDev = process.env.NODE_ENV === "development";
+const base = isDev ? "/sv-frontmentor-solutions/" : "";
+
 export default defineConfig({
-  root: "src",
+  base,
   plugins: [react()],
   build: {
     emptyOutDir: true,
