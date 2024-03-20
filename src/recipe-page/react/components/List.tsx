@@ -15,8 +15,8 @@ const listVariants = cva("list", {
       decimal: "list-decimal",
     },
     markerColor: {
-      nutmeg: "marker:text-primary-nutmeg",
-      darkRaspberry: "marker:text-primary-darkRaspberry",
+      nutmeg: "marker:text-primary",
+      darkRaspberry: "marker:text-secondary",
     },
     markerFont: {
       bold: "marker:font-bold",

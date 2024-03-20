@@ -7,10 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          nutmeg: "hsl(14, 45%, 36%)",
-          darkRaspberry: "hsl(332, 51%, 32%)",
-        },
+        primary: "hsl(14, 45%, 36%)",
+        secondary: "hsl(332, 51%, 32%)",
         neutral: {
           roseWhite: "hsl(330, 100%, 98%)",
           eggshell: "hsl(30, 54%, 90%)",

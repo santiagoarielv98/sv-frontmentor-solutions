@@ -12,9 +12,9 @@ const typographyVariants = cva("typography", {
       p: "text-base",
     },
     color: {
-      nutmeg: "text-primary-nutmeg",
+      nutmeg: "text-primary",
       darkCharcoal: "text-neutral-darkCharcoal",
-      darkRaspberry: "text-primary-darkRaspberry",
+      darkRaspberry: "text-secondary",
     },
     family: {
       young: "font-young",
