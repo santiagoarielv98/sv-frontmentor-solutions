@@ -1,14 +1,25 @@
 export interface Item {
-  title: string;
+  title?: string;
   description?: string;
+}
+
+export interface Nutrition {
+  calories: string;
+  carbs: string;
+  protein: string;
+  fat: string;
 }
 
 export interface Recipe {
   title: string;
-  subheader?: string;
+  description?: string;
   image?: string;
-  alt?: string;
-  preparations?: Item[];
-  ingredients?: string[];
+  preparationTime?: {
+    total?: string;
+    preparation?: string;
+    cooking?: string;
+  };
+  ingredients?: Item[];
   instructions?: Item[];
+  nutrition?: Nutrition;
 }
