@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["src/recipe-page/index.html"],
+  content: [
+    "src/recipe-page/index.html",
+    "src/recipe-page/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {

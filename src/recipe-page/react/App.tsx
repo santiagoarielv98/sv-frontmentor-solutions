@@ -1,15 +1,21 @@
+import { Typography } from "./components/Typography";
+import { List, ListItem } from "./components/List";
+
+import ImageOmelette from "../assets/images/image-omelette.webp";
+import DesignDesktop from "../design/desktop-design.jpg";
+
 const App = () => {
   return (
     <>
       <div className="font-outfit bg-neutral-eggshell text-neutral-wengeBrown flex items-center justify-center text-base">
         <main className="md:my-[7.5rem]">
           {/* card */}
-          <article className="space-y-6 overflow-hidden bg-white shadow-sm max-md:pb-12 md:max-w-[46rem] md:rounded-3xl md:py-10">
+          <article className="space-y-7 overflow-hidden bg-white shadow-sm max-md:pb-12 md:max-w-[46rem] md:rounded-3xl md:py-10">
             {/* header */}
-            <header className="space-y-10">
+            <header className="space-y-11">
               <figure className="md:px-10">
                 <img
-                  src="./assets/images/image-omelette.webp"
+                  src={ImageOmelette}
                   alt="omelette"
                   className="md:rounded-xl"
                   width="656"
@@ -20,64 +26,64 @@ const App = () => {
                 </figcaption>
               </figure>
               <div className="space-y-6 px-8 md:px-10">
-                <h1 className="font-young text-neutral-darkCharcoal text-3xl md:text-[2.5rem]">
+                <Typography color="darkCharcoal" variant="h1" family="young">
                   Simple Omelette Recipe
-                </h1>
-                <p>
+                </Typography>
+                <Typography>
                   An easy and quick dish, perfect for any meal. This classic
                   omelette combines beaten eggs cooked to perfection, optionally
                   filled with your choice of cheese, vegetables, or meats.
-                </p>
+                </Typography>
               </div>
             </header>
             {/* header */}
             {/* sub-article - preparation time */}
-            <section className="space-y-6 px-8 md:px-10">
+            <section className="px-8 md:px-10">
               <article className="bg-neutral-roseWhite p-7 md:rounded-xl">
-                <section className="space-y-2">
-                  <h2 className="text-primary-darkRaspberry text-xl font-bold">
+                <section>
+                  <Typography color="darkRaspberry" variant="h2">
                     Preparation time
-                  </h2>
-                  <ul className="marker:text-primary-darkRaspberry list-outside list-disc space-y-2 *:ml-6 *:pl-4">
-                    <li>
+                  </Typography>
+                  <List markerColor="darkRaspberry" className="py-1.5">
+                    <ListItem>
                       <b>Total:</b> Approximately 10 minutes
-                    </li>
-                    <li>
+                    </ListItem>
+                    <ListItem>
                       <b>Preparation:</b> 5 minutes
-                    </li>
-                    <li>
+                    </ListItem>
+                    <ListItem>
                       <b>Cooking:</b> 5 minutes
-                    </li>
-                  </ul>
+                    </ListItem>
+                  </List>
                 </section>
               </article>
             </section>
             {/* sub-article - preparation time */}
             {/* article - ingredients */}
-            <section className="space-y-6 px-8 md:px-10">
-              <h2 className="text-primary-nutmeg font-young text-3xl text-[1.75rem]">
+            <section className="px-8 md:px-10">
+              <Typography color="nutmeg" variant="title" family="young">
                 Ingredients
-              </h2>
-              <ul className="marker:text-primary-nutmeg list-outside list-disc space-y-2 *:ml-6 *:pl-4">
-                <li>
+              </Typography>
+              <List>
+                <ListItem>
                   <b>2-3 large eggs</b>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>Salt, to taste</b>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>Pepper, to taste</b>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>1 tablespoon of butter or oil</b>
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>
                     Optional fillings: cheese, diced vegetables, cooked meats,
                     herbs
                   </b>
-                </li>
-              </ul>
+                </ListItem>
+              </List>
             </section>
             {/* article - ingredients */}
 
@@ -86,40 +92,40 @@ const App = () => {
             {/* horizontal rule */}
 
             {/* article - instructions */}
-            <section className="space-y-6 px-8 md:px-10">
-              <h2 className="text-primary-nutmeg font-young text-3xl text-[1.75rem]">
+            <section className="px-8 md:px-10">
+              <Typography color="nutmeg" variant="title" family="young">
                 Instructions
-              </h2>
-              <ol className="marker:text-primary-nutmeg list-outside list-decimal space-y-2 *:ml-6 *:pl-4 marker:font-bold">
-                <li>
+              </Typography>
+              <List marker="decimal" markerColor="nutmeg" markerFont="bold">
+                <ListItem>
                   <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of
                   salt and pepper until they are well mixed. You can add a
                   tablespoon of water or milk for a fluffier texture.
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>Heat the pan:</b> Place a non-stick frying pan over medium
                   heat and add butter or oil.
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>Cook the omelette:</b> Once the butter is melted and
                   bubbling, pour in the eggs. Tilt the pan to ensure the eggs
                   evenly coat the surface.
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>Add fillings (optional):</b> When the eggs begin to set at
                   the edges but are still slightly runny in the middle, sprinkle
                   your chosen fillings over one half of the omelette.
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>Fold and serve:</b> As the omelette continues to cook,
                   carefully lift one edge and fold it over the fillings. Let it
                   cook for another minute, then slide it onto a plate.
-                </li>
-                <li>
+                </ListItem>
+                <ListItem>
                   <b>Enjoy:</b> Serve hot, with additional salt and pepper if
                   needed.
-                </li>
-              </ol>
+                </ListItem>
+              </List>
             </section>
             {/* article - instructions */}
 
@@ -129,13 +135,13 @@ const App = () => {
 
             {/* article - nutrition */}
             <section className="space-y-6 px-8 md:px-10">
-              <h2 className="text-primary-nutmeg font-young text-3xl text-[1.75rem]">
+              <Typography color="nutmeg" variant="title" family="young">
                 Nutrition
-              </h2>
-              <p>
+              </Typography>
+              <Typography>
                 The table below shows nutritional values per serving without the
                 additional fillings.
-              </p>
+              </Typography>
               {/* table - nutritional */}
               <table className="table w-full">
                 <tbody>
@@ -172,6 +178,7 @@ const App = () => {
           {/* card */}
         </main>
       </div>
+      <img src={DesignDesktop} className="fixed inset-0 opacity-30 invert" />
       <div className="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
