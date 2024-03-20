@@ -3,7 +3,7 @@ import { data } from "./data";
 
 const App = () => {
   return (
-    <div className="font-outfit bg-neutral-eggshell text-neutral-wengeBrown flex items-center justify-center text-base">
+    <div className="font-outfit bg-body text-neutral flex items-center justify-center text-base">
       <main className="md:my-[7.5rem]">
         <CardRecipe recipe={data} />
         <div className="attribution">

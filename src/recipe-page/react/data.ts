@@ -13,13 +13,13 @@ export const data: Recipe = {
     cooking: "5 minutes",
   },
   ingredients: [
-    { title: "2-3 large eggs" },
-    { title: "Salt, to taste" },
-    { title: "Pepper, to taste" },
-    { title: "1 tablespoon of butter or oil" },
+    { description: "2-3 large eggs" },
+    { description: "Salt, to taste" },
+    { description: "Pepper, to taste" },
+    { description: "1 tablespoon of butter or oil" },
     {
-      title: "Optional fillings",
-      description: "cheese, diced vegetables, cooked meats, herbs",
+      description:
+        "Optional fillings: cheese, diced vegetables, cooked meats, herbs",
     },
   ],
   instructions: [

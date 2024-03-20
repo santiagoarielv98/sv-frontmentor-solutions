@@ -28,12 +28,12 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({ recipe }) => {
 
       {/* sub-article - preparation time */}
       <section className="px-8 md:px-10">
-        <article className="bg-neutral-roseWhite p-7 md:rounded-xl">
+        <article className="bg-background p-7 md:rounded-xl">
           <section>
-            <Typography color="darkRaspberry" variant="h2">
+            <Typography color="secondary" variant="h2">
               Preparation time
             </Typography>
-            <List markerColor="darkRaspberry">
+            <List markerColor="secondary">
               <ListItem>
                 <b>Total:</b> {preparationTime.total}
               </ListItem>
@@ -51,7 +51,7 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({ recipe }) => {
 
       {/* article - ingredients */}
       <section className="px-8 md:px-10">
-        <Typography color="nutmeg" variant="title" family="young">
+        <Typography color="primary" variant="title" family="young">
           Ingredients
         </Typography>
         <List>
@@ -68,10 +68,10 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({ recipe }) => {
 
       {/* article - instructions */}
       <section className="px-8 md:px-10">
-        <Typography color="nutmeg" variant="title" family="young">
+        <Typography color="primary" variant="title" family="young">
           Instructions
         </Typography>
-        <List marker="decimal" markerColor="nutmeg" markerFont="bold">
+        <List marker="decimal" markerColor="primary" markerWeight="bold">
           {instructions.map((instruction: Item, index) => (
             <RecipeListItem item={instruction} key={index} />
           ))}
@@ -85,7 +85,7 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({ recipe }) => {
 
       {/* article - nutrition */}
       <section className="space-y-6 px-8 md:px-10">
-        <Typography color="nutmeg" variant="title" family="young">
+        <Typography color="primary" variant="title" family="young">
           Nutrition
         </Typography>
         <Typography>
@@ -106,14 +106,47 @@ export interface RecipeListItemProps {
 }
 
 export const RecipeListItem: React.FC<RecipeListItemProps> = ({ item }) => {
+  const { title, description } = item;
   return (
     <ListItem>
-      {item.title && <b>{item.title}</b>}
-      {item.description && <span>: {item.description}</span>}
+      {title && <b>{title}: </b>}
+      {description && <span>{description}</span>}
     </ListItem>
   );
 };
 
+export interface CardHeaderProps {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+export const CardHeader: React.FC<CardHeaderProps> = ({
+  title,
+  description,
+  image,
+}) => {
+  return (
+    <header className="space-y-11">
+      <figure className="md:px-10">
+        <img
+          src={image}
+          alt="omelette"
+          className="md:rounded-xl"
+          width="656"
+          height="300"
+        />
+        <figcaption className="hidden">{title}</figcaption>
+      </figure>
+      <div className="space-y-6 px-8 md:px-10">
+        <Typography color="accent" variant="h1" family="young">
+          {title}
+        </Typography>
+        {description && <Typography>{description}</Typography>}
+      </div>
+    </header>
+  );
+};
 export interface NutritionProps {
   nutrition: Nutrition;
 }
@@ -148,38 +181,5 @@ export const NutritionTable: React.FC<NutritionProps> = ({ nutrition }) => {
         </tr>
       </tbody>
     </table>
-  );
-};
-
-export interface CardHeaderProps {
-  title: string;
-  description?: string;
-  image?: string;
-}
-
-export const CardHeader: React.FC<CardHeaderProps> = ({
-  title,
-  description,
-  image,
-}) => {
-  return (
-    <header className="space-y-11">
-      <figure className="md:px-10">
-        <img
-          src={image}
-          alt="omelette"
-          className="md:rounded-xl"
-          width="656"
-          height="300"
-        />
-        <figcaption className="hidden">{title}</figcaption>
-      </figure>
-      <div className="space-y-6 px-8 md:px-10">
-        <Typography color="darkCharcoal" variant="h1" family="young">
-          {title}
-        </Typography>
-        {description && <Typography>{description}</Typography>}
-      </div>
-    </header>
   );
 };

@@ -3,6 +3,8 @@ import { cva } from "class-variance-authority";
 
 import clsx from "clsx";
 
+import { colors } from "../utils/theme";
+
 const variantMapping = {
   disc: "ul",
   decimal: "ol",
@@ -14,17 +16,14 @@ const listVariants = cva("list", {
       disc: "list-disc",
       decimal: "list-decimal",
     },
-    markerColor: {
-      nutmeg: "marker:text-primary",
-      darkRaspberry: "marker:text-secondary",
-    },
-    markerFont: {
+    markerColor: colors("marker:text-"),
+    markerWeight: {
       bold: "marker:font-bold",
     },
   },
   defaultVariants: {
     marker: "disc",
-    markerColor: "nutmeg",
+    markerColor: "primary",
   },
 });
 
@@ -35,7 +34,7 @@ export interface ListProps
 export const List: React.FC<ListProps> = ({
   marker,
   markerColor,
-  markerFont,
+  markerWeight,
   className,
   ...props
 }) => {
@@ -46,7 +45,7 @@ export const List: React.FC<ListProps> = ({
     <Comp
       className={clsx(
         defaultClasses,
-        listVariants({ marker, markerColor, markerFont }),
+        listVariants({ marker, markerColor, markerWeight }),
         className,
       )}
       {...props}

@@ -2,6 +2,7 @@ import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
 
 import clsx from "clsx";
+import { colors } from "../utils/theme";
 
 const typographyVariants = cva("typography", {
   variants: {
@@ -11,11 +12,7 @@ const typographyVariants = cva("typography", {
       h2: "text-xl font-bold",
       p: "text-base",
     },
-    color: {
-      nutmeg: "text-primary",
-      darkCharcoal: "text-neutral-darkCharcoal",
-      darkRaspberry: "text-secondary",
-    },
+    color: colors(),
     family: {
       young: "font-young",
       outfit: "font-outfit",
@@ -23,7 +20,7 @@ const typographyVariants = cva("typography", {
   },
   defaultVariants: {
     variant: "p",
-    color: "darkCharcoal",
+    color: "neutral",
     family: "outfit",
   },
 });
