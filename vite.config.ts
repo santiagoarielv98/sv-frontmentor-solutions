@@ -21,6 +21,7 @@ export default defineConfig({
           __dirname,
           "src/social-links-profile/index.html",
         ),
+        "blog-preview": resolve(__dirname, "src/blog-preview-card/index.html"),
       },
     },
   },
