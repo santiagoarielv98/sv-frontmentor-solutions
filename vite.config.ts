@@ -22,6 +22,7 @@ export default defineConfig({
           "src/social-links-profile/index.html",
         ),
         "blog-preview": resolve(__dirname, "src/blog-preview-card/index.html"),
+        "faq-accordion": resolve(__dirname, "src/faq-accordion/index.html"),
       },
     },
   },

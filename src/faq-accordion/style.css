@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@config "./tailwind.config.js";
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background-image: url(./assets/images/icon-plus.svg);
+  cursor: pointer;
+}
+
+details[open] > summary::after {
+  background-image: url(./assets/images/icon-minus.svg);
+}
