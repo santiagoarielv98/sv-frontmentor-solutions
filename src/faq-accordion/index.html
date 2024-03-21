@@ -8,37 +8,40 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body
-    class="bg-body font-work-sans bg-contain bg-top bg-no-repeat text-base"
-    style="
-      background-image: url(./assets//images/background-pattern-desktop.svg);
-    "
+    class="bg-body font-work-sans bg-contain bg-top bg-no-repeat text-sm md:text-base"
   >
     <main class="flex min-h-screen items-center justify-center p-6">
       <article
-        class="shadow-secondary/10 h-min w-full max-w-[37.5rem] rounded-xl bg-white p-10 shadow-2xl"
+        class="shadow-secondary/10 h-min w-full max-w-[37.5rem] rounded-xl bg-white p-6 shadow-2xl md:p-10"
       >
         <section>
           <div class="flex items-center">
             <img
-              class="w-10"
+              class="w-6 md:w-10"
               src="./assets/images/icon-star.svg"
               width="40"
               height="41"
               alt="star"
             />
-            <h1 class="text-primary pl-6 text-6xl font-bold">FAQs</h1>
+            <h1 class="text-primary pl-6 text-3xl font-bold md:text-6xl">
+              FAQs
+            </h1>
           </div>
         </section>
-        <section class="mt-10">
-          <ul class="space-y-6">
+        <section class="mt-6 md:mt-10">
+          <ul class="space-y-4 md:space-y-6">
             <li>
               <details name="faq" open class="group">
-                <summary class="flex items-center">
-                  <h2 class="text-primary text-lg font-bold">
+                <summary
+                  class="text-primary hover:text-secondary flex cursor-pointer items-center"
+                >
+                  <h2
+                    class="w-min grow text-balance text-base font-bold md:text-lg"
+                  >
                     What is Frontend Mentor, and how will it help me?
                   </h2>
                 </summary>
-                <p class="text-secondary my-6 text-base">
+                <p class="text-secondary my-6">
                   Frontend Mentor offers realistic coding challenges to help
                   developers improve their frontend coding skills with projects
                   in HTML, CSS, and JavaScript. It's suitable for all levels and
@@ -49,12 +52,16 @@
             <hr />
             <li>
               <details name="faq" class="group">
-                <summary class="flex items-center">
-                  <h2 class="text-primary grow text-lg font-bold">
+                <summary
+                  class="text-primary hover:text-secondary flex cursor-pointer items-center"
+                >
+                  <h2
+                    class="w-min grow text-balance text-base font-bold md:text-lg"
+                  >
                     Is Frontend Mentor free?
                   </h2>
                 </summary>
-                <p class="text-secondary my-6 text-base">
+                <p class="text-secondary my-6">
                   Yes, Frontend Mentor offers both free and premium coding
                   challenges, with the free option providing access to a range
                   of projects suitable for all skill levels.
@@ -64,12 +71,16 @@
             <hr />
             <li>
               <details name="faq" class="group">
-                <summary class="flex items-center">
-                  <h2 class="text-primary grow text-lg font-bold">
+                <summary
+                  class="text-primary hover:text-secondary flex cursor-pointer items-center"
+                >
+                  <h2
+                    class="w-min grow text-balance text-base font-bold md:text-lg"
+                  >
                     Can I use Frontend Mentor projects in my portfolio?
                   </h2>
                 </summary>
-                <p class="text-secondary my-6 text-base">
+                <p class="text-secondary my-6">
                   Yes, you can use projects completed on Frontend Mentor in your
                   portfolio. It's an excellent way to showcase your skills to
                   potential employers!
@@ -79,14 +90,18 @@
             <hr />
             <li>
               <details name="faq" class="group">
-                <summary class="flex items-center">
-                  <h2 class="text-primary grow text-lg font-bold">
+                <summary
+                  class="text-primary hover:text-secondary flex cursor-pointer items-center"
+                >
+                  <h2
+                    class="w-min grow text-balance text-base font-bold md:text-lg"
+                  >
                     How can I get help if I'm stuck on a
                     <!-- Frontend Mentor -->
                     challenge?
                   </h2>
                 </summary>
-                <p class="text-secondary my-6 text-base">
+                <p class="text-secondary my-6">
                   The best place to get help is inside Frontend Mentor's Discord
                   community. There's a help channel where you can ask questions
                   and seek support from other community members.
@@ -97,10 +112,6 @@
         </section>
       </article>
     </main>
-    <img
-      src="./design/desktop-design.jpg"
-      class="fixed inset-0 opacity-30 invert"
-    />
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

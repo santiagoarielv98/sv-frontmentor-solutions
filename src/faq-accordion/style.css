@@ -13,9 +13,18 @@ summary::after {
   height: 28px;
   display: inline-block;
   background-image: url(./assets/images/icon-plus.svg);
-  cursor: pointer;
 }
 
 details[open] > summary::after {
   background-image: url(./assets/images/icon-minus.svg);
+}
+
+body {
+  background-image: url(./assets/images/background-pattern-mobile.svg);
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
 }
