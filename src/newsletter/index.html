@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SV - Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-roboto bg-body text-base">
+    <main class="flex min-h-screen items-center justify-center">
+      <article
+        class="text-body flex h-min w-full max-w-[58rem] gap-x-6 rounded-[2rem] bg-white p-6 shadow-2xl"
+      >
+        <section class="flex w-min grow flex-col justify-center px-10">
+          <div class="space-y-6">
+            <h1 class="text-secondary text-6xl text-[3.5rem] font-bold">
+              Stay updated!
+            </h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="space-y-2.5">
+              <li class="flex items-center">
+                <p class="pl-4">Product discovery and building what matters</p>
+              </li>
+              <li class="flex items-center">
+                <p class="pl-4">Measuring to ensure updates are a success</p>
+              </li>
+              <li class="flex items-center">
+                <p class="pl-4">And much more!</p>
+              </li>
+            </ul>
+          </div>
+          <form class="mt-9 space-y-6">
+            <div>
+              <label for="email" class="text-xs font-bold">Email address</label>
+              <div class="mt-2">
+                <input
+                  id="email"
+                  type="email"
+                  class="border-grey placeholder:text-grey focus:outline-secondary w-full rounded-lg border px-6 py-4"
+                  placeholder="email@company.com"
+                />
+              </div>
+            </div>
+            <div>
+              <button
+                class="bg-secondary w-full rounded-lg px-6 py-4 font-bold text-white"
+              >
+                Subscribe to monthly newsletter
+              </button>
+            </div>
+          </form>
+        </section>
+        <section>
+          <figure>
+            <img
+              src="./assets/images/illustration-sign-up-desktop.svg"
+              alt="illustration"
+            />
+            <figcaption>Illustration</figcaption>
+          </figure>
+        </section>
+      </article>
+    </main>
+
+    <div class="hidden">
+      Thanks for subscribing! A confirmation email has been sent to
+      ash@loremcompany.com. Please open it and click the button inside to
+      confirm your subscription. Dismiss message
+    </div>
+
+    <!-- <img src="./design/active-states.jpg" class="fixed inset-0" /> -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

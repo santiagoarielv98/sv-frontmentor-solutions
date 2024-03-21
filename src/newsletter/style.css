@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@config "./tailwind.config.js";
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+li::before {
+  content: url(./assets/images/icon-list.svg);
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-size: contain;
+}
