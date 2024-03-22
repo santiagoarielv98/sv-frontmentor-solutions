@@ -24,6 +24,7 @@ export default defineConfig({
         "blog-preview": resolve(__dirname, "src/blog-preview-card/index.html"),
         "faq-accordion": resolve(__dirname, "src/faq-accordion/index.html"),
         newsletter: resolve(__dirname, "src/newsletter/index.html"),
+        "newsletter-success": resolve(__dirname, "src/newsletter/success.html"),
       },
     },
   },

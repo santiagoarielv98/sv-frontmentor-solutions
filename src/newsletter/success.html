@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SV - Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-roboto bg-body text-base">
+    <main class="flex min-h-screen justify-center opacity-30 md:items-center">
+      <article
+        class="text-body flex h-screen w-full max-w-[31.5rem] flex-col gap-x-6 bg-white px-6 pb-10 pt-5 shadow-2xl md:h-min md:flex-row md:rounded-[2rem] md:px-16 md:pb-16 md:pt-12"
+      >
+        <section
+          class="order-1 mt-auto flex grow flex-col justify-center md:space-y-10"
+        >
+          <figcaption class="mt-auto md:mt-0">
+            <img
+              src="./assets/images/icon-success.svg"
+              alt=""
+              width="64"
+              height="64"
+            />
+          </figcaption>
+          <div class="mb-auto mt-10 space-y-6 md:my-0">
+            <h1
+              class="text-secondary text-4xl text-[2.5rem] font-bold md:text-6xl md:text-[3.5rem]"
+            >
+              Thanks for subscribing!
+            </h1>
+            <p>
+              A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+              Please open it and click the button inside to confirm your
+              subscription.
+            </p>
+          </div>
+          <form action="index" class="mt-auto">
+            <button
+              class="bg-secondary hover:shadow-primary/40 hover:bg-primary w-full rounded-lg px-6 py-4 font-bold text-white transition-all hover:shadow-xl"
+            >
+              Dismiss message
+            </button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <!-- <img src="./design/mobile-design.jpg" class="fixed inset-0 -z-10" /> -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
