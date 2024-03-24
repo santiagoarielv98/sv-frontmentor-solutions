@@ -9,7 +9,7 @@ To ensure 100% fidelity to the original design while working on Frontend Mentor 
    - `design/desktop-design`
    - `design/mobile-design`
 
-![step-1](./img/step-1.png)
+![step-1](./img/step-2.png)
 
 3. Utilize [Tailwind CSS](https://tailwindcss.com/) to apply some of the following styles:
 
