@@ -1,0 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500..800;1,500..800&display=swap");
+@config "./tailwind.config.js";
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
