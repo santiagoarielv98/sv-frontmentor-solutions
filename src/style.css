@@ -9,3 +9,8 @@
   @apply hover:underline;
   color: hsl(228, 45%, 44%);
 }
+
+html,
+body {
+  height: 100%;
+}
