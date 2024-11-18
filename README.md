@@ -37,7 +37,7 @@ Cada carpeta representa una solución individual e incluye:
     ┃ ┗ 📜 tailwind.config.js           # Configuracion de tailwind para Desafío
     ┗ 📂 assets/                        # Recursos públicos (imágenes, íconos, etc.)
         ┗ 📜 Nombre-del-Desafío.png     # Imagen Preview del desafio
-    ```
+```
 
 Ejemplo:
 ```
