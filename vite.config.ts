@@ -16,7 +16,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         recipe: resolve(__dirname, "src/recipe-page/index.html"),
-        "recipe-react": resolve(__dirname, "src/recipe-page/react/index.html"),
         "social-links": resolve(
           __dirname,
           "src/social-links-profile/index.html",
