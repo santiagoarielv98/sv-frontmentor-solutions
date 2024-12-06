@@ -14,9 +14,10 @@ Este repositorio contiene mis soluciones a los desafíos de [Frontend Mentor](ht
 2. [Estructura del Repositorio](#estructura-del-repositorio)
 3. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 4. [Cómo Usar este Repositorio](#cómo-usar-este-repositorio)
-5. [Contribuciones](#contribuciones)
-6. [Licencia](#licencia)
-7. [Contacto](#contacto)
+5. [Tutorial de Alta Fidelidad](#tutorial)
+6. [Contribuciones](#contribuciones)
+7. [Licencia](#licencia)
+8. [Contacto](#contacto)
 
 ---
 
@@ -79,6 +80,11 @@ Ejemplo:
     yarn dev
    ```
 4. Abre tu navegador y ve a `http://localhost:5173/` para ver los desafíos.
+
+---
+
+## **Tutorial de Alta Fidelidad**
+Para asegurar un 100% de fidelidad al diseño original mientras trabajo en los desafíos de Frontend Mentor, puedes ver el tutorial completo en [este enlace](./src/alta-fidelidad/README.md).
 
 ---
 
