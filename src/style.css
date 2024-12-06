@@ -5,6 +5,7 @@
 .attribution {
   @apply fixed bottom-0 right-0 bg-white px-2 py-1 text-center text-[11px] font-light text-black shadow-md;
 }
+
 .attribution a {
   @apply hover:underline;
   color: hsl(228, 45%, 44%);
