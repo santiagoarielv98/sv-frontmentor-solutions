@@ -7,25 +7,25 @@
   <title>SV - Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="./style.css" />
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="SV - Newsletter sign-up form with success message. A project to showcase HTML and CSS skills.">
+  <meta name="keywords" content="HTML, CSS, Newsletter, Sign-up, Form, Frontend">
+  <meta name="author" content="Santiago Ariel Villanueva">
 </head>
 
 <body class="font-roboto bg-body text-base">
-  <div class="group absolute left-0 top-0 transition-all">
-    <div class="invisible p-5 transition-all group-hover:visible">
-      <a href="../index.html" style="display: inline-flex"
-        class="w-full rounded-lg bg-slate-900 px-6 py-4 font-bold text-white transition-all hover:bg-orange-500 hover:shadow-xl hover:shadow-orange-800/40">Back</a>
-    </div>
-  </div>
 
   <main class="flex min-h-screen justify-center md:items-center">
     <article
       class="text-body flex h-min w-full max-w-[58rem] flex-col gap-x-6 bg-white shadow-2xl md:flex-row md:rounded-[2rem] md:p-6">
       <section class="order-1 flex grow flex-col justify-center px-6 py-10 md:w-min md:py-0 lg:px-10">
         <div class="space-y-6">
-          <h1 class="text-secondary text-4xl text-[2.5rem] font-bold md:text-6xl md:text-[3.5rem]">
+          <h1 id="newsletter-title"
+            class="text-secondary text-4xl text-[2.5rem] font-bold md:text-6xl md:text-[3.5rem]">
             Stay updated!
           </h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <p id="newsletter-description">Join 60,000+ product managers receiving monthly updates on:</p>
           <ul class="space-y-2.5">
             <li class="flex md:items-center">
               <p class="pl-4">Product discovery and building what matters</p>
@@ -38,15 +38,16 @@
             </li>
           </ul>
         </div>
-        <form class="mt-9 space-y-6" action="success">
+        <form class="mt-9 space-y-6" action="success" aria-labelledby="newsletter-title"
+          aria-describedby="newsletter-description">
           <fieldset class="group">
             <label for="email" class="flex justify-between text-xs font-bold">
               <span>Email address</span>
-              <span class="text-primary group-valid:hidden">Valid email required</span>
+              <span id="email-error" class="text-primary group-valid:hidden">Valid email required</span>
             </label>
             <input id="email" type="email"
               class="border-grey placeholder:text-grey focus:outline-secondary invalid:bg-primary/10 invalid:border-primary invalid:text-primary mt-2 w-full rounded-lg border px-6 py-4"
-              placeholder="email@company.com" />
+              placeholder="email@company.com" aria-describedby="email-error" aria-invalid="false" />
           </fieldset>
           <div>
             <button

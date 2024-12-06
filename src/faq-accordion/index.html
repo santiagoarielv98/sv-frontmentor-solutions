@@ -7,30 +7,28 @@
   <title>SV - FAQ accordion</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="./style.css" />
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="SV - FAQ accordion. A project to showcase HTML and CSS skills.">
+  <meta name="keywords" content="HTML, CSS, FAQ, Accordion, Frontend">
+  <meta name="author" content="Santiago Ariel Villanueva">
 </head>
 
 <body class="bg-body font-work-sans bg-contain bg-top bg-no-repeat text-sm md:text-base">
-  <div class="group absolute left-0 top-0 transition-all">
-    <div class="invisible p-5 transition-all group-hover:visible">
-      <a href="../index.html" style="display: inline-flex"
-        class="w-full rounded-lg bg-slate-900 px-6 py-4 font-bold text-white transition-all hover:bg-orange-500 hover:shadow-xl hover:shadow-orange-800/40">Back</a>
-    </div>
-  </div>
   <main class="flex min-h-screen items-center justify-center p-6">
     <article class="shadow-secondary/10 h-min w-full max-w-[37.5rem] rounded-xl bg-white p-6 shadow-2xl md:p-10">
       <section>
         <div class="flex items-center">
           <img class="w-6 md:w-10" src="./assets/images/icon-star.svg" width="40" height="41" alt="star" />
-          <h1 class="text-primary pl-6 text-3xl font-bold md:text-6xl">
+          <h1 id="faq-title" class="text-primary pl-6 text-3xl font-bold md:text-6xl">
             FAQs
           </h1>
         </div>
       </section>
       <section class="mt-6 md:mt-10">
-        <ul class="space-y-4 md:space-y-6">
+        <ul class="space-y-4 md:space-y-6" aria-labelledby="faq-title">
           <li>
-            <details name="faq" open class="group">
-              <summary class="text-primary hover:text-secondary flex cursor-pointer items-center">
+            <details name="faq" open class="group" aria-expanded="true" aria-controls="faq1">
+              <summary id="faq1" class="text-primary hover:text-secondary flex cursor-pointer items-center">
                 <h2 class="w-min grow text-balance text-base font-bold md:text-lg">
                   What is Frontend Mentor, and how will it help me?
                 </h2>
@@ -45,8 +43,8 @@
           </li>
           <hr />
           <li>
-            <details name="faq" class="group">
-              <summary class="text-primary hover:text-secondary flex cursor-pointer items-center">
+            <details name="faq" class="group" aria-expanded="false" aria-controls="faq2">
+              <summary id="faq2" class="text-primary hover:text-secondary flex cursor-pointer items-center">
                 <h2 class="w-min grow text-balance text-base font-bold md:text-lg">
                   Is Frontend Mentor free?
                 </h2>
@@ -60,8 +58,8 @@
           </li>
           <hr />
           <li>
-            <details name="faq" class="group">
-              <summary class="text-primary hover:text-secondary flex cursor-pointer items-center">
+            <details name="faq" class="group" aria-expanded="false" aria-controls="faq3">
+              <summary id="faq3" class="text-primary hover:text-secondary flex cursor-pointer items-center">
                 <h2 class="w-min grow text-balance text-base font-bold md:text-lg">
                   Can I use Frontend Mentor projects in my portfolio?
                 </h2>
@@ -75,8 +73,8 @@
           </li>
           <hr />
           <li>
-            <details name="faq" class="group">
-              <summary class="text-primary hover:text-secondary flex cursor-pointer items-center">
+            <details name="faq" class="group" aria-expanded="false" aria-controls="faq4">
+              <summary id="faq4" class="text-primary hover:text-secondary flex cursor-pointer items-center">
                 <h2 class="w-min grow text-balance text-base font-bold md:text-lg">
                   How can I get help if I'm stuck on a
                   <!-- Frontend Mentor -->
@@ -94,11 +92,7 @@
       </section>
     </article>
   </main>
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
-  </div>
+
 </body>
 
 </html>
